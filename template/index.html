@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Título Padrão{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Meu Site Sobre Araras</h1>
+        <p>Explore o fascinante mundo das araras-azuis.</p>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/conservacao">Conservação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sair">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container mt-4">
+        
+
+
+
+
+
+        <main class="container mt-4">
+        
+            <h2>Conhecendo a Arara-Azul</h2>
+            <p>A arara-azul (Anodorhynchus hyacinthinus) é uma das aves mais majestosas do mundo. Conhecida por suas plumagens vibrantes e tamanho impressionante, esta espécie é um símbolo da biodiversidade da América do Sul.</p>
+            
+            <p>Originária das florestas tropicais e savanas do Brasil, Paraguai e Bolívia, a arara-azul pode atingir até 1 metro de comprimento. Sua coloração azul brilhante e o contraste de penas amarelas na face e na cauda fazem dela uma ave facilmente reconhecível.</p>
+        
+            <p>Essas aves são altamente sociais e costumam ser vistas em grupos, formando laços fortes com seus companheiros. A arara-azul é conhecida por sua inteligência e habilidade em imitar sons, o que a torna popular em cativeiro, embora isso contribua para o tráfico ilegal de animais.</p>
+        
+            <p>A arara-azul é uma ave herbívora, alimentando-se principalmente de frutas, nozes e sementes. Sua dieta é essencial para a dispersão de sementes em seu habitat, desempenhando um papel crucial na regeneração das florestas.</p>
+        
+            <p>No entanto, a espécie enfrenta várias ameaças, incluindo a destruição de seu habitat natural devido ao desmatamento e à agricultura. O tráfico ilegal também representa um risco significativo, levando à diminuição da população selvagem.</p>
+        
+            <p>Organizações de conservação estão trabalhando arduamente para proteger a arara-azul e seu habitat. Iniciativas incluem a criação de áreas de proteção e programas de educação para sensibilizar a população sobre a importância da preservação da vida selvagem.</p>
+        
+            <p>Além disso, projetos de reabilitação ajudam a reintegrar araras resgatadas à natureza, contribuindo para a recuperação da população. É fundamental que todos façam sua parte, apoiando iniciativas de conservação e promovendo o respeito pela fauna local.</p>
+        
+            <p>Com um futuro incerto, a arara-azul precisa da ajuda de todos nós. O que podemos fazer para ajudar? Existem várias maneiras de contribuir, seja através de doações a organizações de conservação, seja educando outros sobre a importância da preservação.</p>
+        
+            <p>Junte-se a nós na luta pela conservação da arara-azul. Compartilhe informações, apoie projetos locais e, acima de tudo, admire a beleza dessa magnífica ave em seu habitat natural.</p>
+            {% endblock %}
+        </main>
+        
+    </main>
+    
+    <footer class="bg-light text-center py-3 mt-4">
+        <p>&copy; 2024 Meu Site Sobre Araras. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
